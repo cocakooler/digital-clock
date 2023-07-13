@@ -5,21 +5,27 @@
 }
 .hour1{
     padding:  20px;
-
+    color:black
 }
 .hour2{
     padding:  20px;
-    
+    color:black
 }
 .minut1{
     padding:  20px;
-    
+    color:black
 }
 .minut2{
     padding:  20px;
-    
+    color:black
 }
 .tyobo{
     padding:  20px;
-    
+    color:black
+}
+.clockbody{
+    width : 600px ;
+    margin: auto;
+    background:rgb(143, 255, 231)
+
 }
