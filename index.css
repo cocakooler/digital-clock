@@ -1,0 +1,25 @@
+.flex{display: flex;
+    justify-content: center; 
+    transform: translateY(150%);
+   
+}
+.hour1{
+    padding:  20px;
+
+}
+.hour2{
+    padding:  20px;
+    
+}
+.minut1{
+    padding:  20px;
+    
+}
+.minut2{
+    padding:  20px;
+    
+}
+.tyobo{
+    padding:  20px;
+    
+}
