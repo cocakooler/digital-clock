@@ -1,7 +1,6 @@
 .flex{display: flex;
     justify-content: center; 
-    transform: translateY(150%);
-   
+    transform: translateY(50%);
 }
 .hour1{
     padding:  20px;
@@ -24,8 +23,43 @@
     color:black
 }
 .clockbody{
+    border-radius:100px 100px 100px 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     width : 600px ;
+    height: 300px;
     margin: auto;
-    background:rgb(143, 255, 231)
-
+    background:rgb(161, 201, 253)
+    
+}
+.numberbody{
+    border-radius:10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width : 520px ;
+    height: 220px;
+    margin: auto;
+    background:rgb(170, 170, 170)
+    
+}
+.clockbutton{
+    display: flex;
+    justify-content: center; 
+    transform: translateY(-1500%);
+    border-radius:100px 100px 10px 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width : 450px ;
+    height: 10px;
+    margin: auto;
+    background:rgb(94, 94, 94)
 }
