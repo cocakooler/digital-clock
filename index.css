@@ -63,3 +63,21 @@
     margin: auto;
     background:rgb(94, 94, 94)
 }
+.clockAlarm{
+    display: flex;
+    justify-content: center; 
+    transform: translateY(-220%);
+    text-align:center;
+    vertical-align:center;
+    align-items: center;
+    border-radius:100px 100px 100px 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width : 450px ;
+    height: 100px;
+    margin: auto;
+    background:rgb(35, 177, 111)
+}

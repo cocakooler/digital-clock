@@ -3,6 +3,11 @@ let area2 = document.getElementById("grid-2");
 let area3 = document.getElementById("grid-3");
 let area4 = document.getElementById("grid-4");
 let area5 = document.getElementById("grid-5");
+let area6 = document.getElementById("grid-6");
+let alarmSet2 = document.getElementById("alarmSet1");
+const music = document.querySelector("#music");
+
+
 function setTime(){
 var now = new Date();
 var Hour = now.getHours();
@@ -18,7 +23,36 @@ area3.innerHTML =creatGrid(1,10);
 area4.innerHTML =creatGrid(1,minten);
 area5.innerHTML =creatGrid(1,minone);
 }
+function alarm(){
+    if(minten === alarmMinTen & minone === alarmMinOne & hourten === alarmHourTen & hourone === alarmHourOne){
+        if (music.currentTime >= 15){
+            music.pause();
+            area6.innerHTML = 'アラームは終了しました';
+           }else{
+        music.play();
+        area6.innerHTML ='今がその時!!';
+           }
+    }else{
+        area6.innerHTML = '今はまだその時ではない';
+        music.currentTime = 0;
+    }
+}
+function clickbutton1(){
+    var alarmHour1 = document.getElementById("number1").value;
+    var alarmMin1 = document.getElementById("number2").value;
+    const alarmHour = ('00' + alarmHour1).slice(-2);
+    const alarmMin = ('00' + alarmMin1).slice(-2);
+
+    area6.innerHTML = 'アラームの時間を'+alarmHour + '時' + alarmMin +'分に設定しました';
+    alarmSet2.innerHTML = 'アラームの時間を'+alarmHour + '時' + alarmMin +'分に設定しました';  
+    alarmHourTen = Math.floor(alarmHour/10) % 10
+    alarmHourOne = Math.floor(alarmHour/1) % 10
+    alarmMinTen = Math.floor(alarmMin/10) % 10
+    alarmMinOne = Math.floor(alarmMin/1) % 10   
+
+}
 setInterval('setTime()',1000);
+setInterval('alarm()',2000);
 
 
 function creatGrid(iro,suzi){

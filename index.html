@@ -11,7 +11,23 @@
 </head>
 
 <body>
-    <div class="clockbutton">
+    <form>
+        <label for="textForm1">時間: </label>
+        <input type="number" id="number1"max="24"value="1">
+        <label for="textForm1">分: </label>
+        <input type="number" id="number2"max="59" value="0">
+        <button type="button" onclick="clickbutton1()">送信</button>
+        <br>
+        <label id="alarmSet1" class="alarmSet">
+            アラームはまだセットされていません
+    </label>
+
+      </form>
+    <audio src="eye-catch.mp3" id="music"></audio>
+    <div id="grid-6" class="clockAlarm">
+    動作確認中
+    </div>
+    <div  class="clockbutton">
     </div>
     <div class="clockbody">
         <div class="numberbody">
