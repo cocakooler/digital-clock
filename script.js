@@ -49,7 +49,6 @@ function clickbutton1(){
     alarmHourOne = Math.floor(alarmHour/1) % 10
     alarmMinTen = Math.floor(alarmMin/10) % 10
     alarmMinOne = Math.floor(alarmMin/1) % 10   
-
 }
 setInterval('setTime()',1000);
 setInterval('alarm()',2000);
